@@ -23,8 +23,35 @@ the first element is less than or equal to second element,than it moves to next 
  . Compare 12 and 33 (12 is lesser than 33) than we need  not to swap them.  
 list after [2,5,1,3,8,12,33]  
  We have to do until all the element did not need swaping.   
- After all the swaping completed the list of elements are shown list this [1,2,3,5,8,12,33]
- 
+ After all the swaping completed the list of elements are shown like this [1,2,3,5,8,12,33]  
+
+
+## Quick sort
+->Quick sort is a divide and conquer algorithm that sort an elements by selecting a 'pivot' element  
+After selecting a pivot element we have to do partitioning the other elements  
+partitioning elements are done by two array according to whether they are lesser than or greater than the pivot element ,than the sorting are listed.     
+### How Quick sort works?
+1. #### Choose a pivot:
+selecting a pivot element from the list of array that can be done in selecting first array or the last array or the random elements.   
+2. #### Partition :
+Partition the array into two array, left and right  
+left contains all elements which are less than pivot element  
+right contains all elements which are greater than pivot element.  
+
+
+After partition all the elements are arrange in the correct order with the pivot element.  
+than the list of array are shown  
+### Example
+Suppose we have some list of array
+[5,2,8,3,1,12,33]
+1. choose a pivot : like 5
+2. partition:
+left elements =[2,3,1]  
+right elements =[12,8,33]
+3. Swaping 
+left elements=[1,2,3]
+right elements=[8,12,33]
+After all elements are swap than the result is [1,2,3,5,8,12,33]  
  ## Project Maintainers & Contributors  
 <table>
   <tr>
