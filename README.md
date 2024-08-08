@@ -1,1 +1,1 @@
-# -C-Sorting-techniques
+# C-Sorting-techniques
