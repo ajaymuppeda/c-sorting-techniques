@@ -25,3 +25,9 @@ list after [2,5,1,3,8,12,33]
  We have to do until all the element did not need swaping.   
  After all the swaping completed the list of elements are shown list this [1,2,3,5,8,12,33]
  
+ ## Project Maintainers & Contributors  
+<table>
+  <tr>
+    <td align="center"><a href="https://ajaymuppeda.github.io/profile/"><img src="https://avatars.githubusercontent.com/u/170258834?v=4" width="100px;" alt=""/><br /><sub><b>Ajay Muppeda</b></sub></a></td>
+  </tr>
+</table>  
