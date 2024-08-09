@@ -52,6 +52,35 @@ right elements =[12,8,33]
 left elements=[1,2,3]  
 right elements=[8,12,33]  
 After all elements are swap than the result is [1,2,3,5,8,12,33]    
+
+
+
+## Selection Sort    
+->Selection sort is a simple sorting algorithm that works by repeatedly selecting the smallest (or largest, depending on the sorting order) element from the unsorted portion of the array and moving it to the beginning (or end) of the sorted portion.   
+### How Selection sort works?
+Start with aunsorted array and an empty sprted porrtion than find the minumum unsorted portion to find the minumum element    
+Swap the minumum element with the first element of the unsorted portion   
+Repeat the same step until the list is sorted   
+### Example   
+Suppose we have some list of array
+[64,25,12,22,11]   
+Path 1   
+. find minumun element (11 is the minumum element)   
+. Swap 11 with the first element (first element is 64)   
+. than we have sorted portion [11]
+. And unsorted portion [64,25,12,22]      
+Path 2
+. Find minumum element (12 is the minumum element)   
+. Swap 12 with the first element (first element is 64)   
+. Than we have sorted portion [11,12]    
+. And unsorted portion [64,25,22]   
+
+repeat the same path with the all the elements   
+the list of sorted elements are [11,12,22,25,64]   
+
+
+
+
  ## Project Maintainers & Contributors    
 <table>
   <tr>
