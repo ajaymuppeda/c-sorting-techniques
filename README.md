@@ -64,19 +64,64 @@ Repeat the same step until the list is sorted
 ### Example   
 Suppose we have some list of array
 [64,25,12,22,11]   
-Path 1   
+Pass 1   
 . find minumun element (11 is the minumum element)   
 . Swap 11 with the first element (first element is 64)   
 . than we have sorted portion [11]
 . And unsorted portion [64,25,12,22]      
-Path 2
+Pass 2
 . Find minumum element (12 is the minumum element)   
 . Swap 12 with the first element (first element is 64)   
 . Than we have sorted portion [11,12]    
 . And unsorted portion [64,25,22]   
 
-repeat the same path with the all the elements   
-the list of sorted elements are [11,12,22,25,64]   
+repeat the same path with the all the elements    
+the list of sorted elements are [11,12,22,25,64]     
+
+
+## Insertion Sort     
+Insertion sort is a simple sorting algorithm that works by passes through an array one element ata time , inserting each element into its proper postion of the array.    
+
+### How Does Insertion sort work?     
+
+1. Start with the second element of the array and sllect it as the key.   
+2. Compare  the key with the previous element(reverse order) to find the correct postion.    
+3. Shift elements greater than the key one position to the right to make space for the key.    
+4. Insert the key into the correct position.   
+5. Repeat all 4 steps until the list is sorted.   
+
+### Example
+Suppose we have some list of array
+[12,24,13,5,6]
+Pass 1:   
+.Key element is 24     
+.compare with previous element (12 is the element)
+12<24  Donot shift the element
+
+Pass 2:
+.Key element is 13
+.compare with previous element (12,24 )
+. 24>13 , shift 13 to the right 
+.insert 13(12,13)
+  
+  Pass 3:
+.Key element is 5
+. compare with pervious element (12,13,24)
+24>5 , shift 5 to the right 
+13>5 , than again shift to the right 
+12>5 , than again shift to the right 
+.insert 5(5,12,13)
+
+  Pass 4:  
+  .Key element is 6
+. compare with pervious element (5,12,13,24)
+24>6 , shift 6 to the right 
+13>6 , than again shift to the right 
+12>6 , than again shift to the right 
+5<6 ,than no need of shift 
+.insert 6(5,6,12,13)
+
+The List is sorted (5,6,12,13,24)
 
 
 
