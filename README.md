@@ -124,7 +124,33 @@ Pass 2:
 The List is sorted (5,6,12,13,24)   
   
 
+## Merge sort      
+Merge sort is a divide-and-conquer algorithm that splits an array into smaller subarrays, sorts each subarray, and then merges the sorted subarrays back together to form the final sorted array.     
+### Hoe does merge sort work?     
+1. Divide: Split the array into two halves until each subarray has only one element.      
+2. Conquer: Sort each subarray recursively until the entire array is sorted.    
+3. Merge: Merge the sorted subarrays back together to form the final sorted array.      
+Merge Process    
+1. Compare elements: Compare the smallest unmerged elements from each subarray.    
+2. Merge smaller element: Merge the smaller element into the final sorted array.    
+3. Repeat: Repeat steps 1-2 until all elements are merged.    
 
+### Example     
+Suppose we have some list of array     
+[5, 2, 8, 3, 1, 6, 4]      
+1. Divide: [5, 2, 8] and [3, 1, 6, 4]    
+2. Conquer: Sort each subarray recursively   
+    - [5, 2, 8] -> [2, 5, 8]    
+    - [3, 1, 6, 4] -> [1, 3, 4, 6]    
+3. Merge: Merge the sorted subarrays   
+    Compare 2 and 1, merge 1   
+     Compare 2 and 3, merge 2   
+     Compare 5 and 3, merge 3   
+     Compare 5 and 4, merge 4   
+     Compare 5 and 6, merge 5   
+     Compare 8 and 6, merge 6   
+     Merge 8    
+Final Sorted Array: [1, 2, 3, 4, 5, 6, 8]   
 
  ## Project Maintainers & Contributors    
 <table>
