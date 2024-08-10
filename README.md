@@ -93,36 +93,36 @@ Insertion sort is a simple sorting algorithm that works by passes through an arr
 ### Example
 Suppose we have some list of array
 [12,24,13,5,6]
-Pass 1:   
-.Key element is 24     
-.compare with previous element (12 is the element)
-12<24  Donot shift the element
+Pass 1:     
+.Key element is 24        
+.compare with previous element (12 is the element)     
+12<24  Donot shift the element    
 
-Pass 2:
-.Key element is 13
-.compare with previous element (12,24 )
-. 24>13 , shift 13 to the right 
-.insert 13(12,13)
+Pass 2:    
+.Key element is 13   
+.compare with previous element (12,24 )   
+. 24>13 , shift 13 to the right    
+.insert 13(12,13)   
+    
+  Pass 3:   
+.Key element is 5    
+. compare with pervious element (12,13,24)    
+24>5 , shift 5 to the right     
+13>5 , than again shift to the right     
+12>5 , than again shift to the right     
+.insert 5(5,12,13)   
+
+  Pass 4:    
+  .Key element is 6     
+. compare with pervious element (5,12,13,24)     
+24>6 , shift 6 to the right     
+13>6 , than again shift to the right     
+12>6 , than again shift to the right    
+5<6 ,than no need of shift    
+.insert 6(5,6,12,13)    
+
+The List is sorted (5,6,12,13,24)   
   
-  Pass 3:
-.Key element is 5
-. compare with pervious element (12,13,24)
-24>5 , shift 5 to the right 
-13>5 , than again shift to the right 
-12>5 , than again shift to the right 
-.insert 5(5,12,13)
-
-  Pass 4:  
-  .Key element is 6
-. compare with pervious element (5,12,13,24)
-24>6 , shift 6 to the right 
-13>6 , than again shift to the right 
-12>6 , than again shift to the right 
-5<6 ,than no need of shift 
-.insert 6(5,6,12,13)
-
-The List is sorted (5,6,12,13,24)
-
 
 
 
