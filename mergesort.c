@@ -1,13 +1,15 @@
+
 #include <stdio.h>
 
 // Function to merge two sorted subarrays
-void merge(int arr[], int left, int mid, int right)
-{
+void merge(int arr[], int left, int mid, int right) {
     int n1 = mid - left + 1;
     int n2 = right - mid;
 
+   
     int leftArr[n1], rightArr[n2];
 
+  
     for (int i = 0; i < n1; i++)
         leftArr[i] = arr[left + i];
     for (int j = 0; j < n2; j++)
@@ -16,12 +18,10 @@ void merge(int arr[], int left, int mid, int right)
     // Merge the temporary arrays back into the original array
     int i = 0, j = 0, k = left;
     while (i < n1 && j < n2) {
-        if (leftArr[i] <= rightArr[j]) 
-        {
+        if (leftArr[i] <= rightArr[j]) {
             arr[k] = leftArr[i];
             i++;
-        } else 
-          {
+        } else {
             arr[k] = rightArr[j];
             j++;
         }
@@ -42,13 +42,11 @@ void merge(int arr[], int left, int mid, int right)
 }
 
 // Function to implement merge sort
-void mergeSort(int arr[], int left, int right) 
-{
-    if (left < right)
-    {
+void mergeSort(int arr[], int left, int right) {
+    if (left < right) {
         int mid = left + (right - left) / 2;
 
-        // Recursively sort the left and right subarrays
+      
         mergeSort(arr, left, mid);
         mergeSort(arr, mid + 1, right);
 
@@ -58,18 +56,22 @@ void mergeSort(int arr[], int left, int right)
 }
 
 // Function to print the array
-void printArray(int arr[], int size) 
-{
+void printArray(int arr[], int size) {
     for (int i = 0; i < size; i++)
         printf("%d ", arr[i]);
     printf("\n");
 }
 
-// Driver code
-int main() 
-{
+
+int main() {
     int arr[] = {12, 11, 13, 5, 6, 7};
     int arr_size = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Original array: \n");
+    printArray(arr, arr_size);
+
+    mergeSort(arr, 0, arr_size - 1);
+
     printf("Sorted array: \n");
     printArray(arr, arr_size);
 
