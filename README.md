@@ -152,6 +152,25 @@ Suppose we have some list of array
      Merge 8    
 Final Sorted Array: [1, 2, 3, 4, 5, 6, 8]   
 
+
+## Heap sort   
+Heap sort is a tree-based data structure that satisfies the heap property and the parent node is either greater than (max heap) or less than (min heap) its child nodes. This structure allows for efficient insertion, deletion, and extraction of the maximum or minimum element. 
+
+### How Does Heap sort work
+ 1. Start by building a max heap from the unsorted array. A max heap is a complete binary tree where each parent node is greater than or equal to its children.
+2.  Remove the maximum element (the root of the heap) and place it at the end of the sorted array.   
+3.  Call the heapify function on the reduced heap to maintain the heap property.   
+4. Repeat 2 and 3 step until the heap s empty.  
+
+#### Heapify Function   
+The heapify function is used to maintain the heap property after removing the maximum element. 
+1. Finding the largest child of the current node.  
+2. Swapping the current node with its largest child if necessary.  
+3. Recursively calling heapify on the affected sub-tree.
+
+
+
+
  ## Project Maintainers & Contributors    
 <table>
   <tr>
